@@ -1,0 +1,26 @@
+.rose-pulse-spinner {
+  width: 40px;
+  height: 40px;
+  color: black;
+  background: radial-gradient(farthest-side, currentColor 92%, transparent) 50%
+      0 / 8px 8px no-repeat,
+    radial-gradient(farthest-side, currentColor 92%, transparent) 50% 100% / 8px
+      8px no-repeat,
+    radial-gradient(farthest-side, currentColor 92%, transparent) 100% 50% / 8px
+      8px no-repeat,
+    radial-gradient(farthest-side, currentColor 92%, transparent) 0 50% / 8px
+      8px no-repeat,
+    radial-gradient(farthest-side, currentColor 92%, transparent) 50% 50% / 8px
+      8px no-repeat,
+    conic-gradient(from 90deg at 4px 4px, transparent 90deg, currentColor 0) -4px -4px /
+      calc(50% + 2px) calc(50% + 2px);
+  background-repeat: no-repeat;
+  animation: spinRosePulse 1s infinite linear;
+  border-radius: 50%;
+}
+
+@keyframes spinRosePulse {
+  to {
+    transform: rotate(180deg);
+  }
+}

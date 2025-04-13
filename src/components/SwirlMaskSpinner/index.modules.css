@@ -1,0 +1,20 @@
+.swirl-mask-spinner {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  --_m: conic-gradient(from 90deg, #0000 15%, #000),
+    linear-gradient(to right, #000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: swirl-spin 1.2s infinite cubic-bezier(0.6, 0.1, 0.4, 1);
+}
+
+@keyframes swirl-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

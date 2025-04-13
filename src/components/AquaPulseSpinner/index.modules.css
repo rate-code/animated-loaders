@@ -1,0 +1,16 @@
+.aqua-pulse-spinner {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 2px;
+  background: conic-gradient(#0000 15%, #000) content-box;
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: aqua-pulse 1s infinite steps(12);
+}
+
+@keyframes aqua-pulse {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,32 @@
+.triple-ring-spinner {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #000 #0000;
+  animation: triple-ring 1s infinite linear;
+}
+.triple-ring-spinner::before,
+.triple-ring-spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+.triple-ring-spinner::before {
+  border-color: #000 #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+.triple-ring-spinner::after {
+  margin: 8px;
+}
+
+@keyframes triple-ring {
+  100% {
+    transform: rotate(1turn);
+  }
+}

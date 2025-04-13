@@ -1,0 +1,15 @@
+.aqua-corner-spinner {
+  width: 30px;
+  height: 30px;
+  background: no-repeat radial-gradient(farthest-side, #000 92%, #0000) top,
+    no-repeat radial-gradient(farthest-side, #000 92%, #0000) left,
+    no-repeat radial-gradient(farthest-side, #000 92%, #0000) right,
+    no-repeat radial-gradient(farthest-side, #000 92%, #0000) bottom;
+  background-size: 6px 6px;
+  animation: aquaSpin 1s infinite;
+}
+@keyframes aquaSpin {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

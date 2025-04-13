@@ -1,0 +1,13 @@
+.dual-tone-spinner {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid black;
+  border-right-color: rgb(217, 230, 235);
+  animation: dual_spinner 1s infinite linear;
+}
+@keyframes dual_spinner {
+  to {
+    transform: rotate(1turn);
+  }
+}

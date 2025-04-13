@@ -1,0 +1,27 @@
+.orbital-dot-spinner {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(farthest-side, #000 90%, #0000) center/16px 16px,
+    radial-gradient(farthest-side, black 90%, #0000) bottom/12px 12px;
+  background-repeat: no-repeat;
+  animation: orbital-dot 1s infinite linear;
+  position: relative;
+}
+.orbital-dot-spinner::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  inset: auto 0 16px;
+  margin: auto;
+  background: #000;
+  border-radius: 50%;
+  transform-origin: 50% calc(100% + 10px);
+  animation: inherit;
+  animation-duration: 0.5s;
+}
+@keyframes orbital-dot {
+  100% {
+    transform: rotate(1turn);
+  }
+}
